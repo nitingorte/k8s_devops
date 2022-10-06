@@ -8,11 +8,11 @@ spec:
     app: myapp
     version: 2.6.1
 
-template: 
-  metadata: 
-    labels:
-      app: myapp
-      version: 2.6.1
+  template: 
+    metadata: 
+      labels:
+        app: myapp
+        version: 2.6.1
   
   spec:
     containers: 
