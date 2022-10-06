@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myapp-rc
+spec:
+  replicas: 3
+  selector:
+    app: myapp
+    version: 2.6.1
+
+template: 
+  metadata: 
+    labels:
+      app: myapp
+      version: 2.6.1
+  
+  spec:
+    containers: 
+    -name: myapp-container
+    image: nitin2304/myjavaapp
+    ports:
+        -containerPort: 8080
