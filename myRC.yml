@@ -17,6 +17,6 @@ template:
   spec:
     containers: 
     -name: myapp-container
-    image: nitin2304/myjavaapp
+    image: nginx
     ports:
         -containerPort: 8080
