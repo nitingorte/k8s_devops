@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: myjavaapp-container
-        image: nitin2304/myjavaapp:1
+        image: nitin2304/myjavaapp:2
         resources:
         ports:
           - containerPort: 8080
