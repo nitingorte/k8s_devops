@@ -13,8 +13,8 @@ spec:
     metadata:
       labels:
         app: myjavaapp
-  spec:
-    containers:
+    spec:
+      containers:
       - name: myjavaapp-container
         image: nitin2304/myjavaapp:1
         resources:
