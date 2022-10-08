@@ -5,18 +5,18 @@ metadata:
   labels:
     app: myjavaapp
 spec:
-    replicas: 3
-    selector:
-      matchLabels:
-        app: myjavaapp
-    template:
-    metadata:
-      labels:
-        app: myjavaapp
-    spec:
-      containers:
-        - name: myjavaapp-container
-          image: nitin2304/myjavaapp:1
-          resources:
-          ports:
-            - containerPort: 8080
+  replicas: 3
+  selector:
+    matchLabels:
+      app: myjavaapp
+  template:
+  metadata:
+    labels:
+      app: myjavaapp
+  spec:
+    containers:
+      - name: myjavaapp-container
+        image: nitin2304/myjavaapp:1
+        resources:
+        ports:
+          - containerPort: 8080
