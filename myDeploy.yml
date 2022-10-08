@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myjavaapp
+spec:
+  selector:
+    replicas: 3
+    matchLabels:
+      app: myjavaapp
+  template:
+    metadata:
+      labels:
+        app: myjavaapp
+    spec:
+      containers:
+        - name: myjavaapp-container
+          image: nitin2304/myjavaapp:1
+          resources:
+          ports:
+            - containerPort: 8080
