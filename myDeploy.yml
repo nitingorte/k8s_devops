@@ -1,13 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myjavaapp
+  name: myjavaapp-deploy
+  labels:
+    app: myjavaapp
 spec:
-  selector:
     replicas: 3
-    matchLabels:
-      app: myjavaapp
-  template:
+    selector:
+      matchLabels:
+        app: myjavaapp
+    template:
     metadata:
       labels:
         app: myjavaapp
